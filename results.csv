@@ -3,3 +3,4 @@ Lane change,PASS
 Emergency braking,PASS
 Pedestrian detection,FAIL
 Adaptive cruise control,PASS
+Blind spot monitor,PASS
