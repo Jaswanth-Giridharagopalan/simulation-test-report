@@ -1,0 +1,5 @@
+scenario,status
+Lane change,PASS
+Emergency braking,PASS
+Pedestrian detection,FAIL
+Adaptive cruise control,PASS

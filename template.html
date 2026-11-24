@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulation Test Report</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #111827;
+      color: #f8fafc;
+      font: 1rem/1.55 system-ui, sans-serif;
+    }
+    main { max-width: 48rem; margin: 0 auto; padding: 3rem 1.25rem; }
+    h1 { margin: 0; font-size: clamp(2rem, 7vw, 3rem); line-height: 1.1; }
+    p { color: #cbd5e1; }
+    dl { display: grid; grid-template-columns: repeat(3, 1fr); gap: .65rem; margin: 2rem 0; }
+    dl div { background: #1e293b; padding: .85rem; border-radius: .65rem; }
+    dt { color: #cbd5e1; }
+    dd { margin: 0; font-size: 2rem; font-weight: 700; }
+    table { border-collapse: collapse; width: 100%; }
+    caption { text-align: left; font-size: 1.25rem; font-weight: 650; margin-bottom: .4rem; }
+    th, td { text-align: left; border-bottom: 1px solid #334155; padding: .75rem .4rem; }
+    tbody th { font-weight: 500; }
+    .pass { color: #86efac; }
+    .fail { color: #fda4af; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Simulation Test Report</h1>
+    <p>Sample results for driver-assistance scenarios.</p>
+    <dl>
+      <div><dt>Total</dt><dd>$total</dd></div>
+      <div><dt>Passed</dt><dd>$passed</dd></div>
+      <div><dt>Failed</dt><dd>$failed</dd></div>
+    </dl>
+    <table>
+      <caption>Scenario results</caption>
+      <thead><tr><th scope="col">Scenario</th><th scope="col">Status</th></tr></thead>
+      <tbody>
+$rows
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
